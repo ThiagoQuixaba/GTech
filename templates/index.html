@@ -10,12 +10,9 @@
         <h1>GTECH</h1>
     </nav>
     <main>
-        <div>
-            <a href="{{ url_for('register') }}"><button id="resgister">Cadastrar</button></a>
-        </div>
-        <div>
-            <a href="{{ url_for('list') }}"><button id="list">Listar</button></a>
-        </div>
+        <a href="{{ url_for('register') }}"><button id="resgister">Cadastrar</button></a>
+        <a href="{{ url_for('list') }}"><button id="list">Listar</button></a>
+        <button id="exit">Sair</button>
     </main>
 </body>
     <script src="{{ url_for('static', filename='script.js') }}"></script>

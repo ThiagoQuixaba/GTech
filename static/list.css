@@ -45,14 +45,14 @@ h1 {
 main {
     width: 100%;
     display: flex;
-    flex-direction: column; /* Organiza os elementos em uma coluna */
-    align-items: center; /* Centraliza os botões horizontalmente */
-    gap: 20px; /* Espaçamento entre os botões */
+    flex-direction: column; 
+    align-items: center; 
+    gap: 20px; 
 }
 
 table {
     border-collapse: collapse;
-    margin: 1%; /* Centraliza a tabela */
+    margin: 1%; 
 }
 td {
     border: solid 1px #000000;

@@ -1,5 +1,5 @@
 from flask import Flask, render_template, jsonify, request
-import MyLibrary, database, re, sys
+import MyLibrary, database, re, sys, os
 database = database.Database()
 
 app = Flask(__name__)
@@ -123,6 +123,10 @@ def processar_alteracao():
     return jsonify({"mensagem": "Cadastro Alterado Com Sucesso!"})
 
 
+
+@app.route('/shutdown')
+def shutdown():
+    os._exit(0) 
 
 if __name__ == '__main__':
     app.run(debug=True)

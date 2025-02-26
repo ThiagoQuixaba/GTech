@@ -45,22 +45,22 @@ h1 {
 main {
     height: 100%;
     width: 100%;
-    display: flex; /* Adicionado */
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
 }
 
 form {
-    margin-top: 120px; /* Você pode remover ou ajustar isso conforme necessário */
-    display: flex; /* Adicionado se você quiser que os elementos dentro do form sejam flexíveis */
-    flex-direction: column; /* Coloca os elementos em coluna */
-    align-items: center; /* Centraliza os elementos dentro do form */
+    margin-top: 120px; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
 }
 
 
 .form-group {
     position: relative;
-    gap: 10px; /* Espaçamento entre os campos na mesma linha */
+    gap: 10px; 
 }
 
 .inline-group {

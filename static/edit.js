@@ -51,7 +51,6 @@ $(document).ready(function() {
 });
 
 function validarNome(input) {
-    // Remove números e caracteres não permitidos
     input.value = input.value.replace(/[^A-Za-zÀ-ÖØ-öø-ÿ\s]/g, '');
 }
 
