@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Editar</title>
+    <link rel="stylesheet" href="../static/register.css" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <nav>
+        <a href="{{ url_for('list') }}"><button id="back">⬅</button></a>
+        <h1>EDITAR</h1>
+    </nav>
+    <main>
+        <form id="formulario">
+            <!-- Nome -->
+            <div class="form-group">
+                <input type="text" id="nome" name="nome" class="one" oninput="validarNome(this)" required>
+                <label for="nome">Nome:</label>
+            </div>
+            <br><br>
+
+            <!-- CPF -->
+            <div class="form-group">
+                <input type="text" id="cpf" name="cpf" class="one" oninput="validarCPF(this)" maxlength="14" required>
+                <label for="cpf">CPF:</label>
+            </div>
+            <br><br>
+
+            <!-- Telefone -->
+            <div class="form-group">
+                <input type="tel" id="telefone" name="telefone" class="one" oninput="validarTelefone(this)" maxlength="15" required>
+                <label for="telefone">Telefone:</label>
+            </div>
+            <br><br>
+
+            <!-- E-mail -->
+            <div class="form-group">
+                <input type="email" id="email" name="email" class="one" required>
+                <label for="email">E-Mail:</label>
+            </div>
+            <br><br>
+
+            <!-- Estado e Cidade -->
+            <div class="form-group inline-group">
+                <div class="form-group">
+                    <select id="estado" name="estado" required>
+                        <option value=""></option>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                    </select>
+                    <label for="estado">Estado:</label>
+                </div>
+
+                <div class="form-group">
+                    <input type="text" id="cidade" name="cidade" class="two" required>
+                    <label for="cidade">Cidade:</label>
+                </div>
+            </div>
+            <br><br>
+
+            <!-- Bairro, Rua e Número -->
+            <div class="form-group inline-group">
+                <div class="form-group">
+                    <input type="text" id="bairro" name="bairro" class="three" required>
+                    <label for="bairro">Bairro:</label>
+                </div>
+
+                <div class="form-group">
+                    <input type="text" id="rua" name="rua" class="three" required>
+                    <label for="rua">Rua:</label>
+                </div>
+
+                <div class="form-group">
+                    <input type="number" id="numero" name="numero" class="three" required>
+                    <label for="numero">Número:</label>
+                </div>
+            </div>
+            <br><br>
+
+            <button type="submit">Enviar</button>
+
+            <p id="resultado"></p>
+        </form>
+    </main>
+</body>
+    <script src="{{ url_for('static', filename='edit.js') }}"></script>
+</html>

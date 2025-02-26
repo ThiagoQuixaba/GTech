@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="../static/list.css" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <nav>
+        <a href="{{ url_for('index') }}"><button id="back">⬅</button></a>
+        <h1>LISTAR</h1>
+    </nav>
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th><b>NOME</b></th>
+                    <th><b>CPF</b></th>
+                    <th><b>Telefone</b></th>
+                    <th><b>E-mail</b></th>
+                    <th><b>Estado</b></th>
+                    <th><b>Cidade</b></th>
+                    <th><b>Bairro</b></th>
+                    <th><b>Rua</b></th>
+                    <th><b>Endereço</b></th>
+                    <th><b> </b></th>
+                </tr>
+            </thead>
+            <tbody id="tabela-objetos">
+            </tbody>
+        </table>
+    </main>
+</body>
+    <script src="{{ url_for('static', filename='list.js') }}"></script>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GTech</title>
+    <link rel="stylesheet" href="../static/index.css" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <nav>
+        <h1>GTECH</h1>
+    </nav>
+    <main>
+        <div>
+            <a href="{{ url_for('register') }}"><button id="resgister">Cadastrar</button></a>
+        </div>
+        <div>
+            <a href="{{ url_for('list') }}"><button id="list">Listar</button></a>
+        </div>
+    </main>
+</body>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</html>
